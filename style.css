@@ -1,47 +1,97 @@
-<div id="vung1">
-    <img src="logo.png" alt="Logo">
-    
-    <a href="/">Trang chủ</a>
-    <a href="/thong-tin.html">Thông tin</a>
-    <a href="/dich-vu.html">Dịch vụ</a>
-</div>
+/* Định dạng cho vùng 1 */
+#vung1 {
+    /* Sử dụng Flexbox để căn chỉnh các phần tử con */
+    display: flex;
+    /* Căn các phần tử con theo chiều ngang */
+    align-items: center;
+    /* Có thể thêm khoảng cách giữa các phần tử nếu cần */
+    /* gap: 20px; */
+    /* Đảm bảo phần tử <img> không bị quá lớn (tùy chọn) */
+    /* img { height: 40px; margin-right: 20px; } */
+}
 
-<div id="vung2">
-    <table class="vung2-table">
-        <thead>
-            <tr>
-                <th rowspan="2">STT</th>
-                <th rowspan="2">Tên</th>
-                <th colspan="3">ĐIỂM</th>
-            </tr>
-            <tr>
-                <th>Văn</th>
-                <th>Toán</th>
-                <th>Anh</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>A</td>
-                <td>6</td>
-                <td>5</td>
-                <td>5.5</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>B</td>
-                <td>7.5</td>
-                <td>5.5</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>C</td>
-                <td>7</td>
-                <td>6.5</td>
-                <td>6</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+/* Định dạng các liên kết (Trang chủ, Thông tin, Dịch vụ) */
+#vung1 a {
+    /* Đặt các liên kết hiển thị dưới dạng khối nội tuyến */
+    display: inline-block;
+    /* Thêm khoảng đệm/khoảng cách giữa các liên kết (tùy chọn) */
+    padding: 10px 15px;
+    /* Loại bỏ gạch chân mặc định của liên kết */
+    text-decoration: none;
+    /* Định dạng màu chữ cho liên kết (tùy chọn) */
+    color: #333;
+    /* Thiết lập font chữ (tùy chọn) */
+    font-family: Arial, sans-serif;
+    /* Thêm khoảng cách lề bên phải để tách các liên kết */
+    margin-right: 10px;
+}
+
+#vung1 a:hover {
+    /* Định dạng khi di chuột (tùy chọn) */
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* --- */
+
+/* Định dạng cho bảng biểu (Giả sử bạn đặt bảng trong một div có id="vung2" hoặc bạn chỉ định style trực tiếp cho thẻ table) */
+
+/* Định dạng chung cho thẻ table, th, td */
+.vung2-table, .vung2-table th, .vung2-table td {
+    /* Thiết lập đường viền */
+    border: 1px solid black;
+    /* Đảm bảo đường viền liền nét, không bị tách rời */
+    border-collapse: collapse;
+    /* Căn giữa nội dung trong ô */
+    text-align: center;
+    /* Thêm khoảng đệm bên trong ô */
+    padding: 8px 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Định dạng cho toàn bộ bảng */
+.vung2-table {
+    /* Có thể đặt chiều rộng tùy ý */
+    width: 50%;
+    margin-top: 20px; /* Khoảng cách với phần trên (tùy chọn) */
+}
+
+/* Định dạng cho hàng tiêu đề (header) - Tương ứng với 'STT', 'Tên', 'Điểm' */
+.vung2-table thead tr:first-child th {
+    /* Màu nền cho hàng tiêu đề trên cùng (tùy chọn) */
+    background-color: #e0e0e0; 
+    /* Đảm bảo chữ in đậm */
+    font-weight: bold;
+}
+
+/* Định dạng đặc biệt cho ô 'Điểm' (kéo dài 3 cột) */
+.vung2-table thead th:nth-child(3) {
+    /* Màu nền cho ô 'Điểm' */
+    background-color: #d0d0d0;
+    /* Có thể làm cho chữ lớn hơn (tùy chọn) */
+    font-size: 1.1em;
+}
+
+/* Định dạng cho các ô điểm ('Văn', 'Toán', 'Anh') */
+.vung2-table thead tr:nth-child(2) th {
+    /* Màu nền cho hàng tiêu đề thứ 2 (Văn, Toán, Anh) */
+    background-color: #f0f0f0;
+    font-weight: normal;
+}
+
+/* Định dạng cho các ô dữ liệu (data cells) - Tùy chọn để làm nổi bật */
+.vung2-table tbody tr:nth-child(even) {
+    /* Màu nền cho các hàng chẵn để dễ đọc hơn (Zebra striping) */
+    background-color: #f9f9f9;
+}
+
+.vung2-table td {
+    /* Căn giữa nội dung */
+    vertical-align: middle;
+}
+
+/* Căn lề trái cho cột Tên (A, B, C) để giống như hình ảnh hơn */
+.vung2-table tbody td:nth-child(2) {
+    text-align: left;
+    padding-left: 15px; 
+}
