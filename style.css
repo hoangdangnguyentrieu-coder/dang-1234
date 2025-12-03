@@ -1,16 +1,47 @@
-h1 {
-	color: red; /* màu chữ đỏ */
-	text-align: center; /* căn giữa */
-}
-p:first-of-type {
-	color: yellow; /* màu chữ vàng */
-	font-size: 13px; /* cỡ chữ 13 */
-	font-family: "Arial", sans-serif; /* font Arial */
-}
-p:last-of-type {
-	background-color: yellow; /* màu nền vàng */
-	font-weight: bold; /* in đậm */
-	font-size: 13px; /* cỡ chữ 13 */
-	font-family: "Times New Roman", serif; /* font Times New Roman */
-}
+<div id="vung1">
+    <img src="logo.png" alt="Logo">
+    
+    <a href="/">Trang chủ</chào mừng đến với bình nguyên vô tận>
+    <a href="/thong-tin.html">Thông tin</nơi đây gồm các nhân vật sử hữa kĩ năng>
+    <a href="/dich-vu.html">Dịch vụ</giải tỏa căng thẳng sau khi chơi liqi>
+</div>
 
+<div id="vung2">
+    <table class="vung2-table">
+        <thead>
+            <tr>
+                <th rowspan="2">STT</th>
+                <th rowspan="2">Tên</th>
+                <th colspan="3">ĐIỂM</th>
+            </tr>
+            <tr>
+                <th>Văn</th>
+                <th>Toán</th>
+                <th>Anh</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>A</td>
+                <td>6</td>
+                <td>5</td>
+                <td>5.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>B</td>
+                <td>7.5</td>
+                <td>5.5</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>C</td>
+                <td>7</td>
+                <td>6.5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
