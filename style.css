@@ -15,24 +15,23 @@ div {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
     box-sizing: border-box; 
 
-    /* Flexbox properties */
     flex-grow: 1;
     margin: 0 10px;
 }
 
 #vung1 { 
     border-color: black; 
-    background-color: green; 
+    background-color: white; 
 }
 
 #vung2 { 
     border-color: black; 
-    background-color: blue; 
+    background-color: white; 
 }
 
 #vung3 { 
     border-color: black; 
-    background-color: orange; 
+    background-color: white; 
 }
 
 .vung-image { 
