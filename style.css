@@ -1,43 +1,33 @@
-{
-    display: flex;
-    justify-content: space-around;
-    width: 90%; 
-    margin: 30px auto;
+<div class="lien-ket-khung">
+    <a href="#trang-chu">Trang chủ</a>
+    <a href="#thong-tin">Thông tin</a>
+    <a href="#dich-vu">Dịch vụ</a>
+</div>
+
+<style>
+.lien-ket-khung {
+    /* Tạo khung viền */
+    border: 2px solid #333; /* Viền màu xám đậm 2px */
+    padding: 10px; /* Khoảng đệm bên trong khung */
+    display: flex; /* Bật Flexbox để đặt các mục theo hàng ngang */
+    justify-content: flex-start; /* Căn chỉnh các mục từ bên trái (mặc định) */
+    gap: 20px; /* Khoảng cách giữa các liên kết */
+    width: fit-content; /* Chiều rộng khung vừa với nội dung */
+    border-radius: 5px; /* Bo tròn góc khung */
+    background-color: #f0f0f0; /* Màu nền nhẹ cho khung */
 }
 
-div {
-    padding: 20px; 
-    border-style: double; 
-    border-width: 8px; 
-    text-align: center; 
-    font-family: 'Verdana', sans-serif; 
-    border-radius: 10px; 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-    box-sizing: border-box; 
-
-    flex-grow: 1;
-    margin: 0 10px;
+.lien-ket-khung a {
+    /* Định dạng cơ bản cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #007bff; /* Màu chữ xanh dương */
+    padding: 5px 10px; /* Khoảng đệm xung quanh chữ */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu */
 }
 
-#vung1 { 
-    border-color: black; 
-    background-color: white; 
+.lien-ket-khung a:hover {
+    /* Hiệu ứng khi di chuột qua */
+    color: #0056b3; /* Màu chữ đậm hơn */
+    text-decoration: underline; /* Thêm gạch chân khi hover */
 }
-
-#vung2 { 
-    border-color: black; 
-    background-color: white; 
-}
-
-#vung3 { 
-    border-color: black; 
-    background-color: white; 
-}
-
-.vung-image { 
-    max-width: 90%; 
-    height: auto; 
-    margin-top: 15px; 
-    border: 3px dotted; 
-    border-radius: 5px;
-}
+</style>
