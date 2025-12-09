@@ -1,29 +1,173 @@
-/* Định dạng cho vùng chứa các liên kết trong Vùng 1 */
-.nav-links {
-    /* 1. Thiết lập Flexbox để căn chỉnh ngang */
-    display: flex;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font hiện đại hơn */
+    margin: 20px;
+    background-color: #f4f7f9; /* Nền trang màu xám nhạt */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+}
+
+/* ==================================== */
+/* 1. VÙNG 1: HEADER/NAVIGATION (Màu Xanh Hải quân - Navy Blue) */
+/* ==================================== */
+
+#vung1 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
     
-    /* 2. Tạo Khung Viền và Khoảng Đệm */
-    border: 2px solid #5d5d5d; /* Khung viền màu xám đậm */
-    padding: 10px; /* Khoảng đệm bên trong khung */
-    border-radius: 5px; /* Bo tròn góc khung */
-    background-color: #f8f8f8; /* Màu nền nhẹ cho khung */
-
-    /* 3. Căn chỉnh và Khoảng cách */
-    gap: 25px; /* Khoảng cách giữa các liên kết là 25px */
-    width: fit-content; /* Chiều rộng khung vừa với nội dung */
-    margin: 10px 0; /* Thêm khoảng cách trên/dưới 10px */
+    background-color: #003366; /* Xanh Hải quân đậm */
+    color: white; /* Chữ trắng */
+    border: 5px solid #007bff; /* Viền xanh dương sáng */
+    
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+    border-radius: 8px; /* Bo tròn góc */
 }
 
-/* Định dạng cho từng liên kết */
+/* Liên kết điều hướng (Tabs) */
+.nav-links {
+    display: flex; 
+    margin-bottom: 15px; /* Khoảng cách với ảnh */
+    
+    /* KHÔNG ĐÓNG KHUNG CHUNG, CHỈ KHUNG RIÊNG TỪNG LIÊN KẾT */
+}
+
 .nav-links a {
-    text-decoration: none; /* Bỏ gạch chân mặc định */
-    color: #007bff; /* Màu chữ xanh dương */
-    font-weight: bold;
-    padding: 5px;
+    border: 1px solid #4a86e8; /* Viền xanh nhạt */
+    padding: 10px 20px; 
+    margin: 0; 
+    border-radius: 0; 
+    display: inline-block; 
+    text-decoration: none; 
+    color: white; /* Chữ trắng */
+    background-color: #007bff; /* Nền xanh dương sáng */
+    transition: background-color 0.3s, color 0.3s; 
+    font-weight: 600;
 }
 
-/* Hiệu ứng khi di chuột qua */
+/* Xử lý viền để các ô liền kề viền đơn */
+.nav-links a + a {
+    border-left-width: 0;
+}
+.nav-links a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.nav-links a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Kiểu khi di chuột vào (Hover effect) */
 .nav-links a:hover {
-    color: #0056b3; /* Màu chữ đậm hơn khi di chuột */
+    background-color: #0056b3; /* Xanh đậm hơn khi hover */
+}
+
+/* ==================================== */
+/* 2. VÙNG 2: NỘI DUNG/FORM (Màu Trắng/Xám nhạt) */
+/* ==================================== */
+
+#vung2 {
+    background-color: white; 
+    color: #333; /* Chữ đen/xám */
+    border: 1px solid #ccc; /* Viền mỏng */
+    
+    padding: 30px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Đóng khung cho toàn bộ Form trong Vùng 2 */
+.form-khung {
+    border: 2px dashed #007bff; /* Viền đứt nét màu xanh dương */
+    padding: 25px; 
+    margin-top: 15px; 
+    border-radius: 8px; 
+    color: #333; /* Đảm bảo chữ bên trong form là màu đen/xám */
+}
+
+/* Tối ưu hiển thị input, select */
+.form-khung input[type="text"],
+.form-khung input[type="email"],
+.form-khung select {
+    color: #333; 
+    background-color: white;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    width: 250px; /* Chiều rộng cố định */
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Định dạng chung cho nút bấm */
+.form-khung button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+/* Định dạng riêng cho nút ĐĂNG NHẬP (type="submit") */
+.form-khung button[type="submit"] {
+    background-color: #28a745; /* Màu xanh lá (Thành công) */
+    color: white;
+}
+.form-khung button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+/* Định dạng riêng cho nút THOÁT (type="button") */
+.form-khung button[type="button"] {
+    background-color: #dc3545; /* Màu đỏ (Nguy hiểm/Thoát) */
+    color: white;
+    margin-left: 10px;
+}
+.form-khung button[type="button"]:hover {
+    background-color: #bd2130;
+}
+
+
+/* ==================================== */
+/* 3. VÙNG 3: FOOTER (Màu Xám Đậm) */
+/* ==================================== */
+
+#vung3 {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #343a40; /* Xám đậm */
+    color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.vung_con p {
+    margin: 5px 0;
+}
+
+/* ==================================== */
+/* CÁC QUY TẮC KHÁC */
+/* ==================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+#vung1 p {
+    text-align: center;
+    width: 100%;
 }
