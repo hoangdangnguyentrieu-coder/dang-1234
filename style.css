@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #ffffff; /* nền trắng giống ảnh */
 }
 
 /* =============================== */
@@ -20,16 +20,16 @@ h2, p {
 /* Header */
 /* =============================== */
 .header {
-    background-color: #f2f2f2;
-    padding: 70px 0;
+    background-color: #f1f1f1;
+    padding: 70px 0;          /* header cao hơn */
     text-align: center;
 }
 
 .header h2 {
-    font-size: 42px;
+    font-size: 42px;          /* chữ Header to */
     margin: 0;
-    font-weight: bold;
     color: #000;
+    font-weight: bold;
 }
 
 /* =============================== */
@@ -43,14 +43,12 @@ h2, p {
 .column {
     float: left;
     width: 33.33%;
-    min-height: 320px;
     padding: 10px;
-    font-weight: normal;
-    background-color: #bfbfbf;
-    border-left: 1px solid #aaa;
+    min-height: 300px;
+    background-color: #bfbfbf; /* xám đậm */
 }
 
-/* tạo cảm giác giống ảnh (cột giữa sáng hơn) */
+/* cột giữa sáng hơn (giống ảnh) */
 .column:nth-child(2) {
     background-color: #c9c9c9;
 }
@@ -66,9 +64,10 @@ h2, p {
 /* Footer */
 /* =============================== */
 .footer {
-    background-color: #f2f2f2;
+    background-color: #f1f1f1;
     padding: 8px;
     text-align: center;
+    color: #000;
     font-size: 14px;
 }
 
@@ -78,7 +77,5 @@ h2, p {
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
-        border-left: none;
-        border-top: 1px solid #aaa;
     }
 }
