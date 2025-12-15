@@ -1,60 +1,76 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+/* =============================== */
+/* Description text */
+/* =============================== */
+h2, p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* =============================== */
 /* Header */
+/* =============================== */
 .header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 30px;
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
 }
 
-/* Hàng chứa cột */
+.header h2 {
+    font-size: 40px;
+    margin: 0;
+    color: #333;
+}
+
+/* =============================== */
+/* Columns using FLOAT */
+/* =============================== */
 .row {
-  width: 100%;
+    width: 100%;
 }
 
-/* Các cột */
+/* 3 cột bằng nhau */
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 20px;
-  height: 200px;
-}
-
-/* Màu từng cột */
-.col1 {
-  background-color: #aaa;
-}
-
-.col2 {
-  background-color: #bbb;
-}
-
-.col3 {
-  background-color: #ccc;
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    min-height: 300px;
+    font-weight: bold;
+    background-color: #d3d3d3;
 }
 
 /* Clear float */
 .row::after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
+/* =============================== */
 /* Footer */
+/* =============================== */
 .footer {
-  background-color: #f1f1f1;
-  padding: 15px;
-  text-align: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+    text-align: center;
+    color: #333;
 }
 
+/* =============================== */
 /* Responsive */
+/* =============================== */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+    .column {
+        width: 100%;
+    }
 }
