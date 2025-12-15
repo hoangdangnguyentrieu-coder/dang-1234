@@ -6,14 +6,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* nền trắng giống ảnh */
+    background-color: #f1f1f1;
 }
 
 /* =============================== */
 /* Description text */
 /* =============================== */
 h2, p {
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* =============================== */
@@ -21,12 +22,12 @@ h2, p {
 /* =============================== */
 .header {
     background-color: #f1f1f1;
-    padding: 70px 0;          /* header cao hơn */
+    padding: 70px 0;
     text-align: center;
 }
 
 .header h2 {
-    font-size: 42px;          /* chữ Header to */
+    font-size: 42px;
     margin: 0;
     color: #000;
     font-weight: bold;
@@ -43,9 +44,9 @@ h2, p {
 .column {
     float: left;
     width: 33.33%;
-    padding: 10px;
+    padding: 15px;
     min-height: 300px;
-    background-color: #bfbfbf; /* xám đậm */
+    background-color: #bfbfbf;
 }
 
 /* cột giữa sáng hơn (giống ảnh) */
@@ -65,9 +66,9 @@ h2, p {
 /* =============================== */
 .footer {
     background-color: #f1f1f1;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
-    color: #000;
+    color: #333;
     font-size: 14px;
 }
 
