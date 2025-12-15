@@ -29,7 +29,7 @@ h2, p {
 .header h2 {
     font-size: 40px;
     margin: 0;
-    color: #333;
+    color: #000;
 }
 
 /* =============================== */
@@ -46,7 +46,7 @@ h2, p {
     padding: 15px;
     min-height: 300px;
     font-weight: bold;
-    background-color: #d3d3d3;
+    background-color: #c0c0c0;
 }
 
 /* Clear float */
@@ -63,7 +63,7 @@ h2, p {
     background-color: #f7f7f7;
     padding: 10px;
     text-align: center;
-    color: #333;
+    color: #000;
 }
 
 /* =============================== */
