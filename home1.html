@@ -1,76 +1,17 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home HTML</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
-    
-    <div id="vung1">
-        <div class="nav-links"> 
-            <a href="#">Trang chủ</a>
-            <a href="#">Thông tin</a>
-            <a href="#">Dịch vụ</a>
-        </div>
-        <img src="istockphoto-893660690-1024x1024.jpg" alt="Ảnh nền" width="100"> 
-    </div>
-    
-    <hr>
-    
-    <div id="vung2">
-        <h2>Form Đăng ký/Thông tin người dùng</h2>
+<h2>CSS Template using Float</h2>
+<p>In this example, we have created a header, three equal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect.</p>
 
-        <form class="form-khung"> 
-            <div class="form-group">
-                <label for="name">Tên:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+<div class="header">
+  <h2>Header</h2>
+</div>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="country">Quốc gia:</label>
-                <select id="country" name="country">
-                    <option value="vn">Việt Nam</option>
-                    <option value="us">Hoa Kỳ</option>
-                    <option value="jp">Nhật Bản</option>
-                    <option value="other">Khác</option>
-                </select>
-            </div>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">Column</div>
+  <div class="column" style="background-color:#bbb;">Column</div>
+  <div class="column" style="background-color:#ccc;">Column</div>
+</div>
 
-            <div class="form-group-checkbox">
-                <label>Sở thích:</label><br>
-                <input type="checkbox" id="sport" name="hobby" value="sport">
-                <label for="sport">Thể thao</label>
-                
-                <input type="checkbox" id="music" name="hobby" value="music">
-                <label for="music">Âm nhạc</label>
-                
-                <input type="checkbox" id="read" name="hobby" value="read">
-                <label for="read">Đọc sách</label>
-            </div>
-
-            <div class="form-buttons">
-                <button type="submit" class="submit-btn">Đăng nhập</button>
-                <button type="button" class="exit-btn">Thoát</button>
-            </div>
-        </form>
-
-        <p>Một số nội dung</p>
-    </div>
-
-    <hr>
-    
-    <div id="vung3">
-        <div class="vung_con">
-            <p>Vùng chân trang / Footer</p>
-            <p>Nội dung chân trang</p>
-        </div>
-    </div>
-</body>
-</html>
+<div class="footer">
+  <p>Footer</p>
+</div>
