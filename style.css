@@ -1,82 +1,61 @@
-* {
-    box-sizing: border-box;
-}
+/*
+   FILE: style.css
+   Mục đích: Tạo giao diện sidenav cố định (fixed) và full-height.
+*/
 
+/* --- 1. Thiết lập cơ bản --- */
 body {
+    margin: 0; /* Xóa margin mặc định */
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
+    line-height: 1.5; /* Điều chỉnh khoảng cách dòng */
 }
 
-/* =============================== */
-/* Description text */
-/* =============================== */
-h2, p {
-    margin-left: 10px;
-    margin-right: 10px;
+/* --- 2. Định dạng cho Thanh Điều hướng Bên (Sidenav) --- */
+.sidenav {
+    height: 100%; /* Chiều cao đầy đủ của viewport */
+    width: 200px; /* Chiều rộng cố định */
+    position: fixed; /* Cố định vị trí, không cuộn theo trang */
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    background-color: #000; /* Màu nền đen tuyệt đối */
+    overflow-x: hidden; 
+    padding-top: 20px; /* Khoảng đệm trên */
+    box-sizing: border-box; 
 }
 
-/* =============================== */
-/* Header */
-/* =============================== */
-.header {
-    background-color: #f1f1f1;
-    padding: 70px 0;
-    text-align: center;
+/* Định dạng cho các liên kết (Link) trong sidenav */
+.sidenav a {
+    /* Điều chỉnh padding để giống với ảnh: khoảng đệm trên/dưới lớn hơn */
+    padding: 15px 16px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: #f1f1f1; /* Màu chữ trắng/sáng */
+    display: block; 
+    transition: 0.3s;
 }
 
-.header h2 {
-    font-size: 42px;
-    margin: 0;
-    color: #000;
-    font-weight: bold;
+/* Hiệu ứng hover cho các liên kết */
+.sidenav a:hover {
+    color: #fff;
+    /* Có thể thêm background-color: #333; nếu muốn hiệu ứng hover màu nền */
 }
 
-/* =============================== */
-/* Columns using FLOAT */
-/* =============================== */
-.row {
-    width: 100%;
+/* --- 3. Định dạng cho Khu vực Nội dung Chính (Content) --- */
+.content {
+    /* Đẩy nội dung chính sang phải bằng với chiều rộng của sidenav */
+    margin-left: 200px;
+    padding: 1px 20px; /* Khoảng đệm xung quanh nội dung */
 }
 
-/* 3 cột bằng nhau */
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-    min-height: 300px;
-    background-color: #bfbfbf;
+/* Định dạng cho tiêu đề và đoạn văn trong nội dung */
+.content h2 {
+    color: #333; 
+    font-size: 32px; /* Điều chỉnh kích thước tiêu đề */
+    margin-top: 40px; /* Khoảng cách từ đỉnh trang */
 }
 
-/* cột giữa sáng hơn (giống ảnh) */
-.column:nth-child(2) {
-    background-color: #c9c9c9;
-}
-
-/* Clear float */
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* =============================== */
-/* Footer */
-/* =============================== */
-.footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-    color: #333;
-    font-size: 14px;
-}
-
-/* =============================== */
-/* Responsive */
-/* =============================== */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
+.content p {
+    color: #555;
+    font-size: 16px;
 }
