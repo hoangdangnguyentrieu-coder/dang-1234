@@ -1,15 +1,15 @@
 .day {
-    display: flex;             /* Biến vùng này thành Flexbox */
-    background-color: #1E90FF; /* Màu DodgerBlue */
-    padding: 10px;             /* Tạo khoảng cách từ viền xanh tới các ô xám */
+    display: flex;             /* Kích hoạt Flexbox */
+    background-color: #1E90FF; /* Màu xanh DodgerBlue */
+    padding: 10px;             /* Khoảng cách đệm bên trong vùng xanh */
 }
 
 .day > div {
-    background-color: #f1f1f1; /* Màu xám nhạt */
+    background-color: #f1f1f1; /* Màu nền xám nhạt */
     margin: 10px;              /* Khoảng cách giữa các ô */
-    padding: 20px;             /* Khoảng cách từ chữ tới viền ô xám */
-    font-size: 30px;           /* Cỡ chữ to */
-    flex: 1;                   /* QUAN TRỌNG: Chia đều độ rộng cho các ô */
+    padding: 20px;             /* Khoảng cách từ chữ đến viền ô */
+    font-size: 30px;           /* Kích thước chữ */
+    flex: 1;                   /* Giúp các ô có độ rộng bằng nhau */
     text-align: center;        /* Căn giữa chữ */
     font-family: Arial, sans-serif;
 }
