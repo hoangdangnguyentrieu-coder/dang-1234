@@ -1,22 +1,19 @@
-/* Container chính (vùng màu xanh dương) */
 .day {
-    display: flex;             /* Kích hoạt Flexbox */
-    background-color: #1E90FF; /* Màu xanh DodgerBlue */
-    padding: 10px;             /* Khoảng cách đệm bên trong vùng xanh */
+    display: flex;
+    background-color: #1E90FF;
+    padding: 10px;
 }
 
-/* Các item con (các ô màu xám chứa thứ trong tuần) */
 .day > div {
-    background-color: #f1f1f1; /* Màu nền xám nhạt */
-    margin: 10px;              /* Khoảng cách giữa các ô */
-    padding: 20px;             /* Khoảng cách từ chữ đến viền ô */
-    font-size: 30px;           /* Kích thước chữ */
-    flex: 1;                   /* Giúp các ô có độ rộng bằng nhau */
-    text-align: center;        /* Căn giữa chữ */
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    flex: 1;
+    text-align: center;
     font-family: Arial, sans-serif;
 }
 
-/* Định dạng đoạn văn bản bên dưới */
 p {
     font-family: Arial, sans-serif;
     margin-top: 20px;
