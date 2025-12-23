@@ -1,11 +1,9 @@
-/* Container chính - Vùng màu xanh dương */
 .day {
     display: flex;             /* Biến vùng này thành Flexbox */
     background-color: #1E90FF; /* Màu DodgerBlue */
     padding: 10px;             /* Tạo khoảng cách từ viền xanh tới các ô xám */
 }
 
-/* Các ô con bên trong (Thứ 2 đến Chủ nhật) */
 .day > div {
     background-color: #f1f1f1; /* Màu xám nhạt */
     margin: 10px;              /* Khoảng cách giữa các ô */
@@ -16,7 +14,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Định dạng đoạn văn bản bên dưới */
 p {
     font-family: Arial, sans-serif;
     margin-top: 20px;
