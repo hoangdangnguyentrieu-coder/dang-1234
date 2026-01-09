@@ -1,36 +1,55 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+body {
+    margin: 20px;
+    font-family: "Times New Roman", Times, serif; /* Font chữ có chân giống trong ảnh */
+    background-color: #fff;
 }
 
-.box {
-    width: 850px;
-    border: 2px solid #666;
-    margin: 40px auto;
-    overflow: hidden;   /* giữ float */
+.container {
+    display: flex; /* Chia hàng ngang */
+    width: 100%;
+    max-width: 800px; /* Độ rộng khung hình */
+    border: 1px solid #333; /* Đường viền đen mỏng bao quanh */
+    min-height: 450px;
+    align-items: stretch;
 }
 
-.left {
-    width: 220px;
-    float: left;
-    background-color: #e6e6e6;
+.sidebar {
+    width: 200px;
+    background-color: #e6e6e6; /* Màu xám nhạt */
     border-right: 1px solid #999;
 }
 
-.left p {
-    margin: 0;
-    padding: 12px;
-    border-bottom: 1px solid #ccc;
-}
-
-.left .title {
-    background-color: #8c8c8c;
+.menu-item.active {
+    background-color: #7f7f7f; /* Màu xám đậm */
     color: white;
-    font-weight: bold;
+    padding: 8px 15px;
 }
 
-.right {
-    width: calc(100% - 220px);
-    float: left;
-    padding: 20px;
+.menu-item {
+    padding: 8px 15px;
+    color: #000;
+    cursor: pointer;
+}
+
+.main-content {
+    flex: 1; /* Tự động dãn khoảng trống còn lại */
+    padding: 10px 30px;
+}
+
+/* Tiêu đề chính */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.courses p {
+    margin-bottom: 10px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+ol li {
+    padding: 2px 0;
 }
