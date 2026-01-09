@@ -4,22 +4,23 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 
 .container {
-    width: 800px;
-    margin: 30px auto;
-    border: 1px solid #333;
+    width: 850px;
+    margin: 40px auto;
+    border: 2px solid #666;   /* viền giống ảnh */
     background-color: #fff;
     overflow: hidden;
 }
 
 .menu {
-    width: 200px;
+    width: 220px;
     float: left;
-    background-color: #e6e6e6;
-    height: 100%;
+    background-color: #f0f0f0;
+    border-right: 1px solid #999;
+    min-height: 350px;
 }
 
 .menu ul {
@@ -29,22 +30,27 @@ body {
 }
 
 .menu li {
-    padding: 12px;
+    padding: 12px 15px;
     border-bottom: 1px solid #ccc;
-    cursor: pointer;
 }
 
 .menu li.active {
-    background-color: #888;
+    background-color: #8c8c8c;
     color: white;
+    font-weight: bold;
 }
 
 .content {
-    width: 600px;
+    width: calc(100% - 220px);
     float: left;
     padding: 20px;
 }
 
 .content h2 {
     margin-top: 0;
+    font-size: 22px;
+}
+
+.content h3 {
+    margin-top: 15px;
 }
