@@ -3,54 +3,34 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #ffffff;
-}
-
-.container {
+.box {
     width: 850px;
+    border: 2px solid #666;
     margin: 40px auto;
-    border: 2px solid #666;   /* viền giống ảnh */
-    background-color: #fff;
-    overflow: hidden;
+    overflow: hidden;   /* giữ float */
 }
 
-.menu {
+.left {
     width: 220px;
     float: left;
-    background-color: #f0f0f0;
+    background-color: #e6e6e6;
     border-right: 1px solid #999;
-    min-height: 350px;
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0;
+.left p {
     margin: 0;
-}
-
-.menu li {
-    padding: 12px 15px;
+    padding: 12px;
     border-bottom: 1px solid #ccc;
 }
 
-.menu li.active {
+.left .title {
     background-color: #8c8c8c;
     color: white;
     font-weight: bold;
 }
 
-.content {
+.right {
     width: calc(100% - 220px);
     float: left;
     padding: 20px;
-}
-
-.content h2 {
-    margin-top: 0;
-    font-size: 22px;
-}
-
-.content h3 {
-    margin-top: 15px;
 }
